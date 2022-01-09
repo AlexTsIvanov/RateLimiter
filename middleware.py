@@ -52,7 +52,6 @@ class middleware():
                         break
                 
                 # Check number of requests and compare to the limit
-                counter = 0 
                 counter = sum([req_list[1] for req_list in reqs_ip])
                 if counter >= limit:
                     return True
